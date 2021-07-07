@@ -1,0 +1,60 @@
+.header {
+    background: #ffffff;
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 37px;
+        padding-bottom: 40px;
+    }
+
+    .hamburger {
+        span {
+            display: flex;
+            height: 1px;
+            width: 19px;
+            background-color: #282828;
+            margin-bottom: 8px;
+            transition: 0.5s all;
+
+            &:nth-child(1) {
+                width: 19px;
+            }
+
+            &:nth-child(2) {
+                width: 24px;
+            }
+
+            &:nth-child(3) {
+                width: 20px;
+            }
+        }
+    }
+
+    .menu {
+        //display: none;
+        
+        &-list {
+            font-family: 'QuincyCF', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            &__line {
+                width: 64px;
+                height: 1px;
+                display: block;
+                margin: 20px auto;
+                border: 0; 
+                border-top: 1px solid #E46A4F; 
+                padding: 0;
+            }
+        }
+    }
+
+    &-logo {
+        margin-top: -25px;
+        &__img {
+            width: 133px;
+        }
+    }
+
+
+}

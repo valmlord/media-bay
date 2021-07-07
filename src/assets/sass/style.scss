@@ -1,0 +1,31 @@
+@import "base/variables";
+@import "libs/fonts";
+@import "blocks/header";
+@import "media/header_media";
+
+* {
+  font-family: 'QuincyCF',sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+  
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  
+    a {
+      text-decoration: none;
+    }
+  
+    body {
+      min-width: 320px;
+      overflow-x: hidden;
+    }
+  }
+  
+  .container {
+    padding: 0 20px;
+  }
