@@ -6,7 +6,10 @@
     background: none;
     border: none;
     color: $black;
-    &:before, &:after {
+    margin-top: 63px;
+
+    &:before,
+    &:after {
         content: url('../icons/header/Ellipse.svg');
         width: 235px;
         height: 73px;
@@ -20,6 +23,12 @@
     }
 
     &-more {
-        margin-top: 63px;
+
+    }
+
+    &-questions {
+        &:before,&:after {
+            right: 39px;
+        }
     }
 }

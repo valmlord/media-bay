@@ -2,6 +2,13 @@
     &-items {
         display: flex;
         flex-direction: column;
+        position: relative;
+        &:before {
+            content: url('../icons/articles/Star.svg');
+            position: absolute;
+            right: -15px;
+            top: -21px;
+        }
     }
     &-item {
         margin-top: 40px;

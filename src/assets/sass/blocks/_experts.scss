@@ -1,0 +1,65 @@
+.experts {
+    &-promo {
+        margin-top: 50px;
+        font-family: "Raleway", sans-serif;
+        font-weight: 400px;
+        font-size: 14px;
+        line-height: 18px;
+        position: relative;
+        &:before {
+            content: url('../icons/experts/ellipse.svg');
+            position: absolute;
+            top: -50px;
+            left: -14px;
+            width: 281px;
+            height: 106px;
+        }
+    }
+
+    &-slider {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &__inner {
+            margin-left: 9px;
+            display: flex;
+            flex-direction: column;
+        }
+        &__author {
+            &-photo {
+                border-radius: 50%;
+            }
+            &-name {
+                font-family: 'QuincyCF', sans-serif;
+                color: $black;
+                font-size: 14px;
+                font-weight: 700;
+            }
+        }
+        &__article {
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+            &-heading {
+                color: $dark-blue;
+                font-family: 'Raleway', sans-serif;
+                margin-top: 10px;
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+        }
+
+        &__description {
+            padding: 17px 0;
+            font-family: 'QuincyCF', sans-serif;
+            color: $black;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 21px;
+        }
+
+        &__header {
+            display: flex;
+        }
+    }
+}

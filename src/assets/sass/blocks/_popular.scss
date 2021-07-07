@@ -1,0 +1,35 @@
+.popular {
+    &-items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-item {
+        margin-top: 45px;
+        &__heading {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 130%;
+            color: $dark-blue;
+            padding: 15px 0;
+        }
+
+        &__title {
+            font-family: 'QuincyCF', sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 120%;
+            color: $black;
+        }
+
+        &__description {
+            color: $black;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 130%;
+            margin-top: 13px;
+        }
+    }
+}
