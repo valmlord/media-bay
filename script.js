@@ -93,7 +93,11 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-
+// HAMBURGER
+var hamburger = document.querySelector(".hamburger");
+hamburger.addEventListener("click", function () {
+  hamburger.classList.toggle("hamburger--active");
+});
 
 /***/ })
 
