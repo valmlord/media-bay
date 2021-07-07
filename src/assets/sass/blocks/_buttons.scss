@@ -7,6 +7,7 @@
     border: none;
     color: $black;
     margin-top: 63px;
+    text-transform: uppercase;
 
     &:before,
     &:after {
@@ -22,13 +23,10 @@
         transform: rotate(7deg);
     }
 
-    &-more {
-
-    }
-
     &-questions {
         &:before,&:after {
             right: 39px;
         }
     }
+
 }
