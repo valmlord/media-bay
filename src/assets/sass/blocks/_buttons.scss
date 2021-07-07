@@ -1,0 +1,25 @@
+.btn {
+    position: relative;
+    font-family: "QuincyCF", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    background: none;
+    border: none;
+    color: $black;
+    &:before, &:after {
+        content: url('../icons/header/Ellipse.svg');
+        width: 235px;
+        height: 73px;
+        position: absolute;
+        bottom: -32px;
+        right: 19px;
+    }
+
+    &:before {
+        transform: rotate(7deg);
+    }
+
+    &-more {
+        margin-top: 63px;
+    }
+}

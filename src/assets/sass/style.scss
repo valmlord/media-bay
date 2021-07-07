@@ -1,10 +1,19 @@
+@import "//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css";
+
 @import "base/variables";
 @import "libs/fonts";
 @import "blocks/header";
 @import "media/header_media";
+@import "blocks/buttons";
+@import "media/buttons_media";
+@import "blocks/promo";
+@import "media/promo_media";
+@import "blocks/title";
+@import "media/title_media";
+@import "blocks/articles";
+@import "media/articles_media";
 
 * {
-  font-family: 'QuincyCF',sans-serif;
     margin: 0;
     padding: 0;
     position: relative;

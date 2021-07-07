@@ -1,0 +1,15 @@
+.title {
+    margin-top: 60px;
+    font-family: 'QuincyCF', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        width: 80px;
+        border-top: 1px solid $red;
+        left: -20px;
+        bottom: -8px;
+    }
+}
