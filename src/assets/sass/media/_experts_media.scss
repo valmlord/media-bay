@@ -1,0 +1,25 @@
+@media (min-width: 768px) {
+    .experts {
+        &-promo {
+            width: 375px;
+            margin-left: 90px;
+            font-size: 15px;
+        }
+        &-slider {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            justify-content: space-between;
+            &__article {
+                max-width: 48%;
+            }
+            &__description {
+                font-size: 22px;
+            }
+
+        }
+        .btn-more {
+            display: none;
+        }
+    }
+}

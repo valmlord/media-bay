@@ -5,6 +5,3 @@ $('.promo-slider').slick({
     arrows: false,
 }); 
 
-/* $('.experts-slider').slick({
-    arrows: false,
-}); */ 

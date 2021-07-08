@@ -1,0 +1,26 @@
+@media (min-width: 768px) {
+    .questions {
+        background-color: #F0FBFE;
+        padding-bottom: 34px;
+        .bg-color {
+            background-color: #F0FBFE;
+        }
+        .title {
+            padding-top: 50px;
+        }
+
+        &-items {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &-item {
+            max-width: 350px;
+            &__text {
+                font-size: 22px;
+                min-height: 52px;
+            }
+        }
+    }
+}
