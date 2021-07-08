@@ -1,0 +1,29 @@
+@media (min-width: 768px) {
+    .footer {
+        &-menu {
+            &__inner {
+                display: flex;
+            }
+            &__list {
+                &:nth-child(2n) {
+                    margin-left: 39px;
+                }
+            }
+            &__title {
+                width: 164px;
+            }
+        }
+        &-wrap {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 60px;
+        }
+
+        &-privacy, &-developer {
+            margin: 0;
+        }
+    }
+}
