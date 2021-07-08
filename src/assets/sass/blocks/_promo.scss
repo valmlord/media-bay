@@ -1,10 +1,15 @@
 .promo {
+    .container {
+        &:first-child {
+            padding: 0;
+        }
+    }
     &-slider {
         &__img {
             width: 100%;
         }
 
-        &__title {
+        &__heading {
             font-family: 'Raleway', sans-serif;
             font-size: 12px;
             font-weight: 400;
@@ -12,11 +17,15 @@
             margin-top: 15px;
         }
 
-        &__description {
+        &__title {
             font-family: 'QuincyCF', sans-serif;
             margin-top: 10px;
             color: $black;
             font-weight: 700;
+            font-size: 20px;
+        }
+        &__description {
+            display: none;
         }
     }
 }

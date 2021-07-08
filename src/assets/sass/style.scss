@@ -46,3 +46,9 @@
   .container {
     padding: 0 20px;
   }
+
+  @media (min-width: 768px) {
+    .container {
+      padding: 0 24px;
+    }
+  }

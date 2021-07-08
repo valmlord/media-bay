@@ -1,0 +1,42 @@
+@media (min-width: 768px) {
+    .promo {
+        .container {
+            &:first-child {
+                padding: 0 24px;
+            }
+
+            &:nth-child(2) {
+                position: absolute;
+                top: 71px;
+            }
+        }
+
+        &-slider {
+            &__img {
+                width: 100%;
+                max-height: 385px;
+            }
+
+            &__title {
+                font-family: 'QuincyCF', sans-serif;
+                font-size: 24px;
+                font-weight: 700;
+                color: $black;
+                margin-top: 15px;
+                max-width: 308px;
+                line-height: 28px;
+            }
+
+            &__description {
+                display: flex;
+                font-family: 'Raleway', sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 15px;
+                line-height: 130%;
+                margin-top: 15px;
+                max-width: 268px;
+            }
+        }
+    }
+}

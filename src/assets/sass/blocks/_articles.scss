@@ -2,6 +2,7 @@
     &-items {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         position: relative;
         &:before {
             content: url('../icons/articles/Star.svg');
