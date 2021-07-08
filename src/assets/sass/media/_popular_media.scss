@@ -1,0 +1,22 @@
+@media (min-width: 768px) {
+    .popular {
+        &-items {
+            display: flex; 
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &-column {
+            max-width: 350px;
+        }
+
+        &-item {
+            &__title {
+                font-size: 22px;
+            }
+            &__description {
+                font-size: 15px;
+            }
+        }
+
+    }
+}

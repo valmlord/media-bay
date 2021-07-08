@@ -1,12 +1,12 @@
 .popular {
+    padding-bottom: 42px;
     &-items {
         display: flex;
         flex-direction: column;
-        padding-bottom: 82px;
+        margin-top: 40px;
     }
 
     &-item {
-        margin-top: 45px;
         &__img {
             width: 100%;
         }
@@ -35,6 +35,7 @@
             font-size: 14px;
             line-height: 130%;
             margin-top: 13px;
+            padding-bottom: 43px;
         }
     }
 }
