@@ -1,15 +1,31 @@
 @media (min-width: 768px) {
     .articles {
+
         &-items {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-between;
             position: relative;
+
+            &:before {
+                content: url('../icons/articles/Star.svg');
+                position: absolute;
+                right: 109px;
+                top: -21px;
+            }
+            &:after {
+                content: url('../icons/experts/ellipse.svg');
+                position: absolute;
+                right: 158px;
+                top: -50px;
+                z-index: 4;
+            }
  
         }
         &-item {
             width: 48%;
+            z-index: 5;
             &:nth-child(1) {
                 height: 500px;
             }
