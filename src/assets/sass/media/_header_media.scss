@@ -27,13 +27,31 @@
                     &:before {
                         content: '●';
                         position: absolute;
-                        font-size: 5px;
+                        font-size: 10px;
                         left: -27%;
-                        top: 8px;
+                        top: 4px;
                     }
                 }
             }
         }
     }
+}
 
+@media (min-width: 1024px) {
+    .header {
+        .menu {
+            &-list {
+                flex-basis: 100%;
+                padding: 40px 150px;
+                &__link {
+                    font-size: 18px;
+                    &:before {
+                        content: '●';
+                        position: absolute;
+                        left: -30%;
+                    }
+                }
+            }
+        }
+    }
 }
