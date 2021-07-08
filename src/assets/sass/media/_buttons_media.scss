@@ -1,0 +1,45 @@
+@media (min-width: 375px) {
+    .btn {    
+        &:before,
+        &:after {
+            position: absolute;
+            left: 14%;
+        }
+    
+        &-questions {
+            &:before,&:after {
+                left: 18%;
+            }
+        }
+
+        &-submit {
+            &:before,&:after {
+                left: 5%;
+            }
+        }
+    
+    }
+}
+
+@media (min-width: 425px) {
+    .btn {    
+        &:before,
+        &:after {
+            position: absolute;
+            left: 18%;
+        }
+    
+        &-questions {
+            &:before,&:after {
+                left: 21%;
+            }
+        }
+
+        &-submit {
+            &:before,&:after {
+                left: 5%;
+            }
+        }
+    
+    }
+}

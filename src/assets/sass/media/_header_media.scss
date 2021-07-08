@@ -1,0 +1,38 @@
+@media (min-width: 768px) {
+    .header {
+        &-inner {
+            padding-bottom: 0;
+        }
+
+        .menu {
+            display: flex;
+            width: 100%;
+
+            &-list {
+                flex-basis: 100%;
+                padding: 30px 77px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                &__link {
+                    font-family: 'QuincyCF', sans-serif;
+                    font-weight: 700;
+                    font-size: 16px;
+                    &:first-child {
+                        &:before {
+                            display: none;
+                        }
+                    }
+                    &:before {
+                        content: '●';
+                        position: absolute;
+                        left: -25%;
+                        top: -2px;
+                    }
+                }
+            }
+        }
+    }
+
+}
