@@ -11,12 +11,16 @@
 
     &:before,
     &:after {
-        content: url('../icons/header/Ellipse.svg');
+        content: '';
+        display: block;
+        position: absolute;
+        top: -174%;
+        left: 6%;
         width: 235px;
         height: 73px;
-        position: absolute;
-        bottom: -32px;
-        right: 19px;
+        border: 1px solid $red;
+        border-radius: 50%;
+
     }
 
     &:before {
@@ -25,7 +29,7 @@
 
     &-questions {
         &:before,&:after {
-            right: 39px;
+            left: 11%;
         }
     }
 
