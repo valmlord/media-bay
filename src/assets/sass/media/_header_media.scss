@@ -27,8 +27,9 @@
                     &:before {
                         content: '●';
                         position: absolute;
-                        left: -25%;
-                        top: -2px;
+                        font-size: 10px;
+                        left: -20%;
+                        top: 2px;
                     }
                 }
             }

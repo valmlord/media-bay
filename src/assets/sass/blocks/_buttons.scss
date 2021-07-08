@@ -6,7 +6,7 @@
     background: none;
     border: none;
     color: $black;
-    margin-top: 63px;
+    margin: 63px auto;
     text-transform: uppercase;
 
     &:before,
@@ -14,8 +14,8 @@
         content: '';
         display: block;
         position: absolute;
-        top: -174%;
-        left: 6%;
+        top: -155%;
+        left: -46%;
         width: 235px;
         height: 73px;
         border: 1px solid $red;
