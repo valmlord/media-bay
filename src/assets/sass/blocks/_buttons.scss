@@ -2,25 +2,28 @@
     position: relative;
     font-family: "QuincyCF", sans-serif;
     font-size: 14px;
-    font-weight: 600;
+    line-height: 130%;
+    font-weight: 700;
     background: none;
     border: none;
     color: $black;
-    margin: 63px auto;
+    margin: 0 auto;
+    margin-top: 27px;
     text-transform: uppercase;
+    width: 202px;
+    height: 63px;
 
     &:before,
     &:after {
         content: '';
         display: block;
         position: absolute;
-        top: -155%;
-        left: -46%;
-        width: 235px;
-        height: 73px;
+        top: -3%;
+        left: 0%;
+        width: 202px;
+        height: 63px;
         border: 1px solid $red;
         border-radius: 50%;
-
     }
 
     &:before {
