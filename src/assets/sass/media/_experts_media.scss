@@ -23,3 +23,27 @@
         }
     }
 }
+
+@media (min-width: 768px) {
+    .experts {
+        &-slider {
+            &__article {
+                display: flex;
+                flex-direction: row-reverse;
+            }
+
+            &__img {
+                padding-right: 20px;
+                min-width: 219px;
+                min-height: 290px;
+            }
+
+            &__header {
+                max-height: 200px;
+            }
+            &__description {
+                padding: 0;
+            }
+        }
+    }
+}
