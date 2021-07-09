@@ -49,6 +49,22 @@
 
 @media (min-width: 1024px) {
     .articles {
+        &-items {
+            &:before {
+                content: url('../icons/articles/Star.svg');
+                position: absolute;
+                right: 288px;
+                top: -73px;
+            }
+
+            &:after {
+                content: url('../icons/experts/ellipse.svg');
+                position: absolute;
+                right: 150px;
+                top: -72px;
+            }
+        }
+
         &-column {
             min-width: 300px;
             max-width: 28%;

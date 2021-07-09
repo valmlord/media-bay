@@ -2,6 +2,7 @@
     .footer {
         &-logo {
             padding: 40px 0;
+
             &__img {
                 width: 150px;
                 height: 63px;
@@ -12,6 +13,7 @@
             &__inner {
                 display: flex;
             }
+
             &__list {
                 &:nth-child(2n) {
                     margin-left: 39px;
@@ -30,6 +32,7 @@
                 width: 164px;
             }
         }
+
         &-wrap {
             display: flex;
             flex-direction: row;
@@ -47,12 +50,14 @@
         &-developer {
             font-size: 16px;
             line-height: 20.8px;
+
             &__link {
                 padding-top: 3px;
             }
         }
 
-        &-privacy, &-developer {
+        &-privacy,
+        &-developer {
             margin: 0;
         }
     }
@@ -60,60 +65,107 @@
 
 @media (min-width: 1024px) {
     .footer {
-            &-inner {
+        &-logo {
+            padding: 50px 0;
+            &__img {
+                width: 199px;
+                height: 83px;
+            }
+        }
+
+        &-inner {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+
+        &-head {
+            width: 40%;
+            display: flex;
+            align-items: flex-start;
+            padding-top: 0;
+        }
+
+        &-wrapper {
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 0;
+        }
+
+        &-menu {
+            &__inner {
                 display: flex;
-                flex-direction: row-reverse;
-                justify-content: space-between;
+                flex-direction: column;
             }
 
-            &-head {
-                width: 40%;
-                display: flex;
-                align-items: flex-start;
-                padding-top: 20px;
+            &__title {
+                font-size: 18px;
+                line-height: 23.4px;
+                width: 184px;
             }
 
-            &-wrapper {
-                width: 50%;
-                display: flex;
-                justify-content: space-between;
-                margin-top: 0;
-            }
-
-            &-menu {
-                &__inner {
-                    display: flex;
-                    flex-direction: column;
+            &__list {
+                &:nth-child(2n) {
+                    margin-left: 0;
+                    margin-top: 15px;
                 }
+            }
 
-                &__list {
-                    &:nth-child(2n) {
-                        margin-left: 0;
-                        margin-top: 15px;
+            &__link {
+                padding-top: 15px;
+                font-size: 16px;
+                line-height: 20.8px;
+
+                &--cursive {
+                    br {
+                        display: none;
                     }
                 }
 
-                &__link {
-                    padding-top: 15px;
-                    &--cursive {
-                        br {
-                            display: none;
-                        }
-                    }
-                    &:first-child {
-                        padding-top: 0;
-                    }
+                &:first-child {
+                    padding-top: 0;
                 }
             }
+        }
 
-            .subscribe {
-                &-form {
+        .subscribe {
+            &-input {
+                width: 384px;
+            }
+            &-form {
                 margin-top: 40px;
                 width: 100%;
-                }
-                &-title {
-                    text-align: left;
-                }
             }
+
+            &-title {
+                text-align: left;
+                font-size: 18px;
+                line-height: 23.4px;
+            }
+        }
+
+        &-privacy {
+            font-size: 16px;
+            line-height: 20.8px;
+        }
+
+        &-developer {
+            font-size: 18px;
+            line-height: 23.4px;
+
+            &__link {
+                padding-top: 3px;
+            }
+        }
+
+        &-license {
+            font-size: 18px;
+            line-height: 23.4px;
+            display: block;
+            margin: -28px auto;
+            margin-bottom: 0;
+        }
+        
     }
 }

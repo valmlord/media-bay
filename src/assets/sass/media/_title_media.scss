@@ -8,6 +8,15 @@
 
 @media (min-width: 1024px) {
     .title { 
-        font-size: 24px;
+        font-size: 36px;
+        line-height: 43.2px;
+        &:after {
+            content: "";
+            position: absolute;
+            width: 80px;
+            border-top: 1px solid $red;
+            left: -32px;
+            bottom: -8px;
+        }
     }
 }

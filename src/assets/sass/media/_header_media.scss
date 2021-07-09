@@ -48,16 +48,51 @@
 
 @media (min-width: 1024px) {
     .header {
+        &-inner {
+            padding-top: 28px;
+        }
+
+        .hamburger {
+            span {
+                width: 34px;
+                margin-bottom: 12px;
+    
+                &:nth-child(2) {
+                    width: 43px;
+                }
+    
+                &:nth-child(3) {
+                    width: 37px;
+                }
+            }
+        }
+
+        &-logo {
+            &__img {
+                width: 199px;
+                height: 83px;
+            }
+        }
+
+    &-search {
+        &__icon {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
         .menu {
             &-list {
                 flex-basis: 100%;
                 padding: 40px 150px;
                 &__link {
                     font-size: 18px;
+                    line-height: 23.4px;
                     &:before {
                         content: '●';
                         position: absolute;
                         left: -30%;
+                        top: 1px;
                     }
                 }
             }
