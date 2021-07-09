@@ -2,8 +2,10 @@
     .experts {
         &-promo {
             width: 375px;
-            margin-left: 90px;
+            margin-left: 99px;
+            margin-top: 90px;
             font-size: 15px;
+            line-height: 19.5px;
         }
         &-slider {
             display: flex;
@@ -12,9 +14,21 @@
             justify-content: space-between;
             &__article {
                 max-width: 48%;
+                margin-top: 70px;
+                &-heading {
+                    margin-top: 7px;
+                }
             }
+            &__author {
+                &-name {
+                    font-size: 16px;
+                    line-height: 20.8px;
+                }
+            }
+
             &__description {
                 font-size: 22px;
+                line-height: 26.4px;
             }
 
         }

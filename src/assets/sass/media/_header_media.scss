@@ -1,7 +1,15 @@
 @media (min-width: 768px) {
     .header {
         &-inner {
+            padding-top: 24px;
             padding-bottom: 0;
+        }
+
+        &-logo {
+            &__img {
+                width: 150px;
+                height: 63px;
+            }
         }
 
         .menu {
@@ -11,6 +19,7 @@
             &-list {
                 flex-basis: 100%;
                 padding: 30px 77px;
+                padding-top: 42px;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
@@ -27,9 +36,9 @@
                     &:before {
                         content: '●';
                         position: absolute;
-                        font-size: 10px;
-                        left: -27%;
-                        top: 4px;
+                        font-size: 8px;
+                        left: -30%;
+                        top: 6px;
                     }
                 }
             }

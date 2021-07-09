@@ -1,5 +1,13 @@
 @media (min-width: 768px) {
     .footer {
+        &-logo {
+            padding: 40px 0;
+            &__img {
+                width: 150px;
+                height: 63px;
+            }
+        }
+
         &-menu {
             &__inner {
                 display: flex;
@@ -8,7 +16,16 @@
                 &:nth-child(2n) {
                     margin-left: 39px;
                 }
+
+                &:nth-child(2) {
+                    margin-top: 0;
+                }
             }
+
+            &__link {
+                padding-top: 15px;
+            }
+
             &__title {
                 width: 164px;
             }
@@ -20,6 +37,19 @@
             justify-content: space-between;
             width: 100%;
             margin-top: 60px;
+        }
+
+        &-privacy {
+            font-size: 15px;
+            line-height: 19.5px;
+        }
+
+        &-developer {
+            font-size: 16px;
+            line-height: 20.8px;
+            &__link {
+                padding-top: 3px;
+            }
         }
 
         &-privacy, &-developer {
