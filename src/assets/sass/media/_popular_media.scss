@@ -34,3 +34,12 @@
         }
     }
 }
+
+@media (min-width: 1440px) {
+    .popular {
+        &-column {
+            min-width: 300px;
+            max-width: 32%;
+        }
+    }
+}
