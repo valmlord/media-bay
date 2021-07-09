@@ -1,10 +1,11 @@
 @media (min-width: 768px) {
     .popular {
         &-items {
-            display: flex; 
+            display: flex;
             flex-direction: row;
             justify-content: space-between;
         }
+
         &-column {
             max-width: 350px;
         }
@@ -13,10 +14,23 @@
             &__title {
                 font-size: 22px;
             }
+
             &__description {
                 font-size: 15px;
             }
         }
+    }
+}
 
+@media (min-width: 1024px) {
+    .popular {
+        &-column {
+            min-width: 300px;
+            max-width: 30%;
+            &:nth-child(3) {
+                display: flex;
+                flex-direction: column;
+            }
+        }
     }
 }

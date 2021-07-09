@@ -27,3 +27,63 @@
         }
     }
 }
+
+@media (min-width: 1024px) {
+    .footer {
+            &-inner {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+            }
+
+            &-head {
+                width: 40%;
+                display: flex;
+                align-items: flex-start;
+                padding-top: 20px;
+            }
+
+            &-wrapper {
+                width: 50%;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 0;
+            }
+
+            &-menu {
+                &__inner {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                &__list {
+                    &:nth-child(2n) {
+                        margin-left: 0;
+                        margin-top: 15px;
+                    }
+                }
+
+                &__link {
+                    padding-top: 15px;
+                    &--cursive {
+                        br {
+                            display: none;
+                        }
+                    }
+                    &:first-child {
+                        padding-top: 0;
+                    }
+                }
+            }
+
+            .subscribe {
+                &-form {
+                margin-top: 40px;
+                width: 100%;
+                }
+                &-title {
+                    text-align: left;
+                }
+            }
+    }
+}

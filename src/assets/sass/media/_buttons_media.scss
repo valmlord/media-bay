@@ -1,2 +1,7 @@
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
+    .btn {
+        &-submit {
+            margin-right: 0;
+        }
+    }
 }

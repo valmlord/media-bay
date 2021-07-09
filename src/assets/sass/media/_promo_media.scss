@@ -80,3 +80,13 @@
     }
 }
 }
+
+@media (min-width: 1440px) {
+    .promo {
+        .container {
+            &:first-child {
+                padding: 0 120px;
+            }
+        }
+    }
+}

@@ -22,39 +22,45 @@
 @import "media/footer_media";
 
 * {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+
+  ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    position: relative;
-    box-sizing: border-box;
-  
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-  
-    a {
-      text-decoration: none;
-    }
-  
-    body {
-      min-width: 320px;
-      overflow-x: hidden;
-    }
   }
-  
+
+  a {
+    text-decoration: none;
+  }
+
+  body {
+    min-width: 320px;
+    overflow-x: hidden;
+  }
+}
+
+.container {
+  padding: 0 20px;
+}
+
+@media (min-width: 768px) {
   .container {
-    padding: 0 20px;
+    padding: 0 24px;
   }
+}
 
-  @media (min-width: 768px) {
-    .container {
-      padding: 0 24px;
-    }
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 32px;
   }
+}
 
-  @media (min-width: 1024px) {
-    .container {
-      padding: 0 32px;
-    }
+@media (min-width: 1440px) {
+  .container {
+    padding: 0 120px;
   }
+}

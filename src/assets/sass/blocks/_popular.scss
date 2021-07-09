@@ -5,6 +5,11 @@
         flex-direction: column;
         margin-top: 40px;
     }
+    &-column {
+        &:nth-child(3) {
+            display: none;
+        }
+    }
 
     &-item {
         &__img {
