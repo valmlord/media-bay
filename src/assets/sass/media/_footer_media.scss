@@ -67,6 +67,7 @@
     .footer {
         &-logo {
             padding: 50px 0;
+
             &__img {
                 width: 199px;
                 height: 83px;
@@ -133,6 +134,7 @@
             &-input {
                 width: 384px;
             }
+
             &-form {
                 margin-top: 40px;
                 width: 100%;
@@ -166,6 +168,17 @@
             margin: -28px auto;
             margin-bottom: 0;
         }
-        
+
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer {
+        .subscribe {
+            &-input {
+                width: 480px;
+                font-size: 18px;
+            }
+        }
     }
 }

@@ -26,15 +26,17 @@
 @media (min-width: 1024px) {
     .popular {
         padding-bottom: 80px;
+
         &-column {
             min-width: 300px;
             max-width: 30%;
+
             &:nth-child(3) {
                 display: flex;
                 flex-direction: column;
             }
         }
-        
+
         &-item {
             &__title {
                 font-size: 24px;

@@ -97,6 +97,7 @@
             }
 
             &:nth-child(2) {
+                top: 107px;
                 padding: 0;
                 padding-left: 64px;
             }
@@ -105,6 +106,15 @@
         &-slider {
             &__img {
                 max-height: 501px;
+            }
+
+            &__title {
+                max-width: 523px;
+            }
+
+            &__description {
+                margin-top: 30px;
+                max-width: 439px;
             }
         }
     }

@@ -7,18 +7,22 @@
             font-size: 15px;
             line-height: 19.5px;
         }
+
         &-slider {
             display: flex;
             flex-wrap: nowrap;
             flex-direction: row;
             justify-content: space-between;
+
             &__article {
                 max-width: 48%;
                 margin-top: 70px;
+
                 &-heading {
                     margin-top: 7px;
                 }
             }
+
             &__author {
                 &-name {
                     font-size: 16px;
@@ -32,6 +36,7 @@
             }
 
         }
+
         .btn-more {
             display: none;
         }
@@ -41,6 +46,7 @@
 @media (min-width: 1024px) {
     .experts {
         padding-bottom: 90px;
+
         &-promo {
             width: 412px;
             margin-left: 143px;
@@ -58,6 +64,7 @@
                 width: 171px;
                 height: 171px;
             }
+
             &__article {
                 display: flex;
                 flex-direction: row-reverse;
@@ -75,6 +82,7 @@
                 min-width: 219px;
                 min-height: 290px;
             }
+
             &__author {
                 &-name {
                     width: 60px;
@@ -91,9 +99,42 @@
             &__header {
                 max-height: 200px;
             }
+
             &__description {
                 padding: 0;
                 margin-top: 30px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .experts {
+        &-promo {
+            width: 453px;
+            font-size: 18px;
+            line-height: 20.8px;
+        }
+
+        &-slider {
+            &:after {
+                content: url('../icons/experts/Star.svg');
+                position: absolute;
+                right: 469px;
+                bottom: -58px;
+            }
+
+            &__author {
+                &-name {
+                    width: 150px;
+                    margin-top: 15px;
+                }
+            }
+
+            &__description {
+                width: 270px;
+                font-size: 24px;
+                line-height: 28.8px;
             }
         }
     }

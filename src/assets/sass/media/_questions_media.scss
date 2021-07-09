@@ -41,6 +41,7 @@
 @media (min-width: 1024px) {
     .questions {
         padding-bottom: 58px;
+
         .container {
             &:nth-child(3) {
                 display: flex;
@@ -78,10 +79,15 @@
 
 @media (min-width: 1440px) {
     .questions {
+        .title {
+            padding-top: 100px;
+        }
+
         &-items {
             max-width: 1440px;
             margin: 0 auto;
             padding: 0 44px;
+
             .container {
                 padding: 0;
             }
@@ -93,5 +99,5 @@
                 height: 80px;
             }
         }
-    } 
+    }
 }

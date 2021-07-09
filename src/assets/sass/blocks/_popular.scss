@@ -1,10 +1,12 @@
 .popular {
     padding-bottom: 42px;
+
     &-items {
         display: flex;
         flex-direction: column;
         margin-top: 40px;
     }
+
     &-column {
         &:nth-child(3) {
             display: none;
@@ -41,6 +43,7 @@
             line-height: 130%;
             margin-top: 13px;
             padding-bottom: 43px;
+
             &:last-child {
                 padding-bottom: 20px;
             }

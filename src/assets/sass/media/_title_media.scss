@@ -1,15 +1,16 @@
 @media (min-width: 768px) {
-    .title { 
+    .title {
         font-size: 24px;
         line-height: 28.8px;
-        margin-top: 80px; 
+        margin-top: 80px;
     }
 }
 
 @media (min-width: 1024px) {
-    .title { 
+    .title {
         font-size: 36px;
         line-height: 43.2px;
+
         &:after {
             content: "";
             position: absolute;
@@ -17,6 +18,20 @@
             border-top: 1px solid $red;
             left: -32px;
             bottom: -8px;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .title {
+        font-size: 40px;
+        line-height: 48px;
+
+        &:after {
+            content: "";
+            position: absolute;
+            left: -119px;
+            width: 200px;
         }
     }
 }

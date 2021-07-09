@@ -99,5 +99,21 @@
             min-width: 300px;
             max-width: 32%;
         }
+
+        &-items {
+            &:before {
+                content: url('../icons/articles/Star.svg');
+                position: absolute;
+                right: 368px;
+                top: -61px;
+            }
+
+            &:after {
+                content: url('../icons/experts/ellipse.svg');
+                position: absolute;
+                right: 168px;
+                top: -72px;
+            }
+        }
     }
 }
