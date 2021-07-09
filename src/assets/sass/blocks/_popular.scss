@@ -19,8 +19,8 @@
         &__heading {
             font-family: 'Raleway', sans-serif;
             font-weight: 400;
-            font-size: 14px;
-            line-height: 130%;
+            font-size: 12px;
+            line-height: 15.6px;
             color: $dark-blue;
             padding: 15px 0;
         }
@@ -29,7 +29,7 @@
             font-family: 'QuincyCF', sans-serif;
             font-weight: 700;
             font-size: 18px;
-            line-height: 120%;
+            line-height: 21.6px;
             color: $black;
         }
 
@@ -41,6 +41,9 @@
             line-height: 130%;
             margin-top: 13px;
             padding-bottom: 43px;
+            &:last-child {
+                padding-bottom: 20px;
+            }
         }
     }
 }

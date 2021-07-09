@@ -22,7 +22,7 @@
             font-size: 18px;
             line-height: 21px;
             color: $black;
-            margin: 40px 0 30px 0;
+            margin: 48px 0 30px 0;
         }
 
         &__header {
@@ -44,7 +44,7 @@
             color: $black;
             font-size: 14px;
             font-weight: 700;
-            line-height: 18px;
+            line-height: 18.2px;
         }
 
         &__heading {
@@ -52,16 +52,17 @@
             font-family: 'Raleway', sans-serif;
             font-size: 10px;
             text-transform: uppercase;
-            margin-top: 15px;
+            margin-top: 10px;
+            line-height: 15.6px;
         }
 
         &__description {
-            margin-top: 15px;
+            margin-top: 13px;
             color: $black;
             font-family: 'Raleway', sans-serif;
             font-weight: 400;
             font-size: 14px;
-            line-height: 18px;
+            line-height: 18.2px;
         }
     }
 

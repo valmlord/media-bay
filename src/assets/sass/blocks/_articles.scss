@@ -29,6 +29,7 @@
             font-family: "QuincyCF", sans-serif;
             padding: 15px 0;
             font-size: 12px;
+            line-height: 15.6px;
             color: $dark-blue;
         }
 
@@ -36,16 +37,17 @@
             font-family: "QuincyCF", sans-serif;
             color: $black;
             font-size: 18px;
+            line-height: 21.6px;
             font-weight: 700;
         }
 
         &__description {
-            font-size: 14px;
             font-family: 'Raleway', sans-serif;
             color: $black;
+            font-size: 14px;
             margin-top: 13px;
             font-weight: 400;
-            line-height: 18px;
+            line-height: 18.2px;
             padding-bottom: 40px;
         }
     }

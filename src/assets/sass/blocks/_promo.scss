@@ -8,12 +8,14 @@
         &__img {
             width: 100%;
             min-height: 214px;
+            object-fit: cover;
         }
 
         &__heading {
             font-family: 'Raleway', sans-serif;
             font-size: 12px;
             font-weight: 400;
+            line-height: 15.6px;
             color: $dark-blue;
             margin-top: 15px;
         }
@@ -24,7 +26,7 @@
             color: $black;
             font-weight: 700;
             font-size: 20px;
-            line-height: 120%;
+            line-height: 24px;
         }
         &__description {
             display: none;
