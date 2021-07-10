@@ -132,7 +132,7 @@
 
         .subscribe {
             &-input {
-                width: 384px;
+                width: 100%;
             }
 
             &-form {
@@ -169,16 +169,5 @@
             margin-bottom: 0;
         }
 
-    }
-}
-
-@media (min-width: 1024px) {
-    .footer {
-        .subscribe {
-            &-input {
-                width: 480px;
-                font-size: 18px;
-            }
-        }
     }
 }

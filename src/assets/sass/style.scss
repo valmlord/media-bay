@@ -37,32 +37,35 @@
     text-decoration: none;
   }
 
-  body {
-    min-width: 320px;
-    overflow-x: hidden;
-  }
 }
 
 .container {
+  width: 100%;
   padding: 0 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 575.98px) {
   .container {
-    padding: 0 24px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    padding: 0 32px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
     margin: 0 auto;
-    padding: 0 120px;
+    width: 536px;
+    padding: 0;
+  }
+}
+
+@media (min-width: 767.98px) {
+  .container {
+    width: 720px;
+  }
+}
+
+@media (min-width: 1023.98px) {
+  .container {
+    width: 920px;
+  }
+}
+
+@media (min-width: 1279.98px) {
+  .container {
+    width: 1200px;
   }
 }

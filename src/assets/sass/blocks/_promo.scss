@@ -1,8 +1,6 @@
 .promo {
     .container {
-        &:first-child {
-            padding: 0;
-        }
+        padding: 0;
     }
 
     &-slider {
@@ -10,6 +8,10 @@
             width: 100%;
             min-height: 214px;
             object-fit: cover;
+        }
+
+        &__wrap {
+            padding: 0 20px;
         }
 
         &__heading {
