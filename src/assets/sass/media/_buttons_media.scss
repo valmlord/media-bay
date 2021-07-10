@@ -1,3 +1,11 @@
+@media (min-width: 767.98px) {
+    .btn {
+        &-author {
+            margin-top: 70px;
+        }
+    }
+}
+
 @media (min-width: 1024px) {
     .btn {
         &-submit {

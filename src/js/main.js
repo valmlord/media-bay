@@ -4,7 +4,7 @@ import "./modules/slider";
 // OUTGOING MENU
 
 const menu = document.querySelector(".outgoing"),
-      //menuItem = document.querySelectorAll(".header-menu__list-link"),
+      menuItem = document.querySelectorAll(".outgoing-menu__link, .outgoing-menu__last-link"),
       cross = document.querySelector(".outgoing-cross"),
       hamburger = document.querySelector(".hamburger");
 
@@ -16,9 +16,8 @@ cross.addEventListener("click", () => {
     menu.classList.remove("outgoing--active");
 });
 
-/* menuItem.forEach((item) => {
+ menuItem.forEach((item) => {
   item.addEventListener("click", () => {
-    hamburger.classList.toggle("header-menu__hamburger--active");
-    menu.classList.toggle("header-menu__nav--active");
+    menu.classList.remove("outgoing--active");
   });
-}); */
+}); 
