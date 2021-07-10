@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (min-width: 767.98px) {
     .popular {
         &-items {
             display: flex;
@@ -23,7 +23,7 @@
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1023.98px) {
     .popular {
         padding-bottom: 80px;
 
@@ -56,7 +56,7 @@
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1279.98px) {
     .popular {
         &-column {
             min-width: 300px;

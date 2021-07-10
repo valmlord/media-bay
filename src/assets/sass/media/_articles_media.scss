@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (min-width: 767.98px) {
     .articles {
         &-items {
             display: flex;
@@ -47,7 +47,7 @@
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1023.98px) {
     .articles {
         &-items {
             &:before {
@@ -93,7 +93,7 @@
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1279.98px) {
     .articles {
         &-column {
             min-width: 300px;
