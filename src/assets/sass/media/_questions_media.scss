@@ -1,14 +1,22 @@
 @media (min-width: 768px) {
     .questions {
+        .container {
+            display: block;
+        }
+
         background-color: #F0FBFE;
         padding-bottom: 34px;
 
-        .bg-color {
-            background-color: #F0FBFE;
-        }
-
         .title {
             padding-top: 50px;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        &-wrap {
+            &--bg {
+                background-color: #f0fbfe;
+            }
         }
 
         &-items {
@@ -19,6 +27,8 @@
 
         &-item {
             max-width: 350px;
+            padding-left: 0px;
+            padding-right: 0px;
 
             &__name {
                 font-size: 16px;
@@ -42,7 +52,7 @@
     .questions {
         padding-bottom: 58px;
 
-        .container {
+        &-wrap {
             &:nth-child(3) {
                 display: flex;
             }
@@ -83,14 +93,8 @@
             padding-top: 100px;
         }
 
-        &-items {
-            max-width: 1440px;
-            margin: 0 auto;
-            padding: 0 44px;
-
-            .container {
-                padding: 0;
-            }
+        &-wrap {
+            padding: 0;
         }
 
         &-item {
