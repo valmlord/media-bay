@@ -14,7 +14,7 @@
 
         .menu {
             display: flex;
-            width: 100%;
+            width: 100%; 
 
             &-list {
                 flex-basis: 100%;
@@ -28,6 +28,9 @@
                     font-family: 'QuincyCF', sans-serif;
                     font-weight: 700;
                     font-size: 16px;
+                    a {
+                        color: $black;
+                    }
 
                     &:first-child {
                         &:before {
@@ -122,7 +125,6 @@
                 padding: 40px 235px;
 
                 &__link {
-
                     &:before {
                         content: '●';
                         position: absolute;
