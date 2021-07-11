@@ -14989,8 +14989,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(slick_carousel__WEBPACK_IMPORTED_MODULE_1__);
 
 
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.promo-slider').slick({
-  arrows: false
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(".promo-slider").on("afterChange", function (event, slick, currentSlide, nextSlide) {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(".promo-slider__counter-current").text("0" + (1 + slick.currentSlide));
+});
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(".promo-slider").on("init reInit", function (event, slick) {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(".promo-slider__counter-total").text("0" + slick.slideCount);
+});
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(".promo-slider").slick({
+  arrows: false,
+  dots: true,
+  autoplay: true,
+  appendDots: jquery__WEBPACK_IMPORTED_MODULE_0___default()(".promo-slider__thumbnails")
 });
 
 /***/ })

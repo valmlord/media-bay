@@ -43,7 +43,7 @@
 
     .outgoing {
         width: 100%;
-        max-height: 100vh; // 100% от высоты экрана - высота верхней плашки
+        height: 100vh; // 100% от высоты экрана - высота верхней плашки
         overflow-y: auto;
         background: #FEFBF6;
         position: fixed;
