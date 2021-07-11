@@ -4,6 +4,7 @@
     }
 
     &-slider {
+        
         &__img {
             width: 100%;
             min-height: 214px;
@@ -43,10 +44,10 @@
         }
         
         &__counter {
-            position: absolute;
-            top: 170px;
+            top: -113px;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
+            padding: 0 20%;
             text-align: center;
             font-family: 'QuincyCF', sans-serif;
             font-weight: 700;
@@ -55,7 +56,6 @@
 
             &-current {
                 color: $dark-blue;
-                padding-right: 30px;
             }
         }
     }
