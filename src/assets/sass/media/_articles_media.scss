@@ -131,16 +131,6 @@
                 display: flex;
                 flex-direction: column;
                 z-index: 5;
-                width: 374px;
-                &--left {
-                    padding-right: 20px;
-                }
-                &--center {
-                    padding: 0 20px;
-                }
-                &--right {
-                    padding-left: 20px;
-                }
                 
                 &__img {
                     display: block;
@@ -177,6 +167,15 @@
                     padding-bottom: 40px;
                 }
             }
+        }
+        .right {
+            margin-left: 20px;
+        }
+        .center {
+            margin: 0 20px;
+        }
+        .left {
+            margin-right: 20px;
         }
     }
 }
