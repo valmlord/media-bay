@@ -1,5 +1,5 @@
 .articles {
-    &-items {
+    &-grid {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -14,13 +14,8 @@
         }
     }
 
-    &-column {
-        &:nth-child(3) {
-            display: none;
-        }
-    }
-
     &-item {
+        
         &__img {
             width: 100%;
         }

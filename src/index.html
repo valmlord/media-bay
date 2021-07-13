@@ -48,7 +48,7 @@
                 <li class="outgoing-menu__link"><a href="#">ВОПРОС ЭКСПЕРТУ</a></li>
               </ul>
             </nav>
-            
+
             <nav class="outgoing-menu">
               <button class="btn btn-author">Стать Автором</button>
               <ul class="outgoing-menu__last-list">
@@ -58,13 +58,13 @@
                 <li class="outgoing-menu__last-link"><a href="#">ПРЕМИЯ АРТ МАНИФЕСТ</a></li>
               </ul>
               <div class="outgoing-socials">
-                <a href="javascript:void(0)" class="outgoing-socials__link">
+                <a href="#" class="outgoing-socials__link">
                   <span class="icon-instagram"></span>
                 </a>
-                <a href="javascript:void(0)" class="outgoing-socials__link">
+                <a href="#" class="outgoing-socials__link">
                   <span class="icon-facebook"></span>
                 </a>
-                <a href="javascript:void(0)" class="outgoing-socials__link">
+                <a href="#" class="outgoing-socials__link">
                   <span class="icon-twitter"></span>
                 </a>
               </div>
@@ -102,7 +102,7 @@
   <section class="promo">
     <div class="container">
       <div class="promo-slider">
-        <a href="javascript:void(0)" class="promo-slider__item">
+        <a href="#" class="promo-slider__item">
           <img class="promo-slider__img"
             srcset="assets/img/promo/slide-1.jpg, assets/img/promo/slide-1@2x.jpg, assets/img/promo/slide-1@3x.jpg"
             alt="slider-item">
@@ -113,7 +113,7 @@
               помогают девушкам принять и полюбить себя</p>
           </div>
         </a>
-        <a href="javascript:void(0)" class="promo-slider__item">
+        <a href="#" class="promo-slider__item">
           <img class="promo-slider__img"
             srcset="assets/img/promo/slide-1.jpg, assets/img/promo/slide-1@2x.jpg, assets/img/promo/slide-1@3x.jpg"
             alt="slider-item">
@@ -124,7 +124,7 @@
               помогают девушкам принять и полюбить себя</p>
           </div>
         </a>
-        <a href="javascript:void(0)" class="promo-slider__item">
+        <a href="#" class="promo-slider__item">
           <img class="promo-slider__img"
             srcset="assets/img/promo/slide-1.jpg, assets/img/promo/slide-1@2x.jpg, assets/img/promo/slide-1@3x.jpg"
             alt="slider-item">
@@ -145,66 +145,305 @@
     </div>
   </section>
 
-  <!-- ARTICLES -->
+  <!-- ARTICLES FLEXBOX GRID -->
 
   <section class="articles">
     <div class="container">
-      <h2 class="title">Статьи</h2>
-      <div class="articles-items">
-        <div class="articles-column">
-          <a class="articles-item" href="javascript:void(0)">
-            <img src="assets/img/articles/article-1.jpg" alt="articles-img" class="articles-item__img">
-            <p class="articles-item__heading">ЛИЧНОСТЬ / ЗДОРОВЬЕ</p>
-            <h3 class="articles-item__title">Что такое суперфуды: польза, вред, мифы</h3>
-            <p class="articles-item__description">Гречку, капусту, зелень едите? Каши, зеленые супы? Сало, между прочим,
-              тоже суперфуд. Получается, что счастье неизбежно. Давайте посмотрим ему в лицо.</p>
+      <h2 class="title title-article">Статьи</h2>
+      <div class="articles-grid grid" id="workOuterShell">
+
+        <div class="grid-section">
+
+          <a class="articles-grid grid-item" href="#">
+            <picture>
+              <source srcset="assets/img/articles/article-1.jpg" type="image/jpeg" media="(min-width: 320px)">
+              <source srcset="assets/img/articles/article-1@2x.jpg" type="image/jpeg" media="(min-width: 768px)">
+              <source srcset="assets/img/articles/article-1@3x.jpg" type="image/jpeg" media="(min-width: 1024px)">
+              <img class="grid-item__img" src="assets/img/articles/article-1.jpg" alt="article-img">
+              <picture>
+                <p class="grid-item__heading">ЛИЧНОСТЬ / ЗДОРОВЬЕ</p>
+                <h3 class="grid-item__title">Что такое суперфуды: польза, вред, мифы</h3>
+                <p class="grid-item__description">Гречку, капусту, зелень едите? Каши, зеленые супы? Сало, между прочим,
+                  тоже суперфуд. Получается, что счастье неизбежно. Давайте посмотрим ему в лицо.
+                </p>
           </a>
-          <a class="articles-item" href="javascript:void(0)">
-            <img src="assets/img/articles/article-3.jpg" alt="articles-img" class="articles-item__img">
-            <p class="articles-item__heading">СТИЛЬ / КРАСОТА</p>
-            <h3 class="articles-item__title">Волосы дыбом: кожа головы испытывает стресс</h3>
-            <p class="articles-item__description">Вместе с брендом Klorane разбираемся, как можно со всем этим
-              справиться.
-              Антистрессовая бьюти-терапия прилагается.</p>
+
+          <a class="articles-grid grid-item" href="#">
+            <picture>
+              <source srcset="assets/img/articles/article-2.jpg" type="image/jpeg" media="(min-width: 320px)">
+              <source srcset="assets/img/articles/article-2@2x.jpg" type="image/jpeg" media="(min-width: 768px)">
+              <source srcset="assets/img/articles/article-2@3x.jpg" type="image/jpeg" media="(min-width: 1024px)">
+              <img class="grid-item__img" src="assets/img/articles/article-2.jpg" alt="article-img">
+              <picture>
+                <p class="grid-item__heading">ЛИЧНОСТЬ / ЗДОРОВЬЕ</p>
+                <h3 class="grid-item__title">Что такое суперфуды: польза, вред, мифы</h3>
+                <p class="grid-item__description">Гречку, капусту, зелень едите? Каши, зеленые супы? Сало, между прочим,
+                  тоже суперфуд. Получается, что счастье неизбежно. Давайте посмотрим ему в лицо.
+                </p>
           </a>
+
         </div>
 
-        <div class="articles-column">
-          <a class="articles-item" href="javascript:void(0)">
-            <img src="assets/img/articles/article-2.jpg" alt="articles-img" class="articles-item__img">
-            <p class="articles-item__heading">ЛИЧНОСТЬ / ЗДОРОВЬЕ</p>
-            <h3 class="articles-item__title">Волосы дыбом: кожа головы испытывает стресс</h3>
-            <p class="articles-item__description">Вместе с брендом Klorane разбираемся, как можно со всем этим
-              справиться. Антистрессовая бьюти-терапия прилагается.</p>
+        <div class="grid-section">
+
+          <a class="articles-grid grid-item" href="#">
+            <picture>
+              <source srcset="assets/img/articles/article-3.jpg" type="image/jpeg" media="(min-width: 320px)">
+              <source srcset="assets/img/articles/article-3@2x.jpg" type="image/jpeg" media="(min-width: 768px)">
+              <source srcset="assets/img/articles/article-3@3x.jpg" type="image/jpeg" media="(min-width: 1024px)">
+              <img class="grid-item__img grid-item__img--min" src="assets/img/articles/article-3.jpg" alt="article-img">
+              <picture>
+                <p class="grid-item__heading">СТИЛЬ / КРАСОТА</p>
+                <h3 class="grid-item__title">Волосы дыбом: кожа головы испытывает стресс</h3>
+                <p class="grid-item__description">Вместе с брендом Klorane разбираемся, как можно со всем этим
+                  справиться.Антистрессовая бьюти-терапия прилагается.
+                </p>
           </a>
-          <a class="articles-item" href="javascript:void(0)">
-            <img src="assets/img/articles/article-5.jpg" alt="articles-img" class="articles-item__img">
-            <p class="articles-item__heading">СТИЛЬ / КРАСОТА</p>
-            <h3 class="articles-item__title">Что такое суперфуды: польза, вред, мифы</h3>
-            <p class="articles-item__description">Гречку, капусту, зелень едите? Каши, зеленые супы? Сало, между прочим,
-              тоже суперфуд. Получается, что счастье неизбежно. Давайте посмотрим ему в лицо.</p>
+
+          <a class="articles-grid grid-item" href="#">
+            <picture>
+              <source srcset="assets/img/articles/article-4.jpg" type="image/jpeg" media="(min-width: 320px)">
+              <source srcset="assets/img/articles/article-4@2x.jpg" type="image/jpeg" media="(min-width: 768px)">
+              <source srcset="assets/img/articles/article-4@3x.jpg" type="image/jpeg" media="(min-width: 1024px)">
+              <img class="grid-item__img" src="assets/img/articles/article-4.jpg" alt="article-img">
+              <picture>
+                <p class="grid-item__heading">СТИЛЬ / КРАСОТА</p>
+                <h3 class="grid-item__title">Волосы дыбом: кожа головы испытывает стресс</h3>
+                <p class="grid-item__description">Вместе с брендом Klorane разбираемся, как можно со всем этим
+                  справиться.Антистрессовая бьюти-терапия прилагается.
+                </p>
           </a>
+
         </div>
 
-        <div class="articles-column">
-          <a class="articles-item" href="javascript:void(0)">
-            <img src="assets/img/articles/article-4.jpg" alt="articles-img" class="articles-item__img">
-            <p class="articles-item__heading">ЛИЧНОСТЬ / ЗДОРОВЬЕ</p>
-            <h3 class="articles-item__title">Что такое суперфуды: польза, вред, мифы</h3>
-            <p class="articles-item__description">Гречку, капусту, зелень едите? Каши, зеленые супы? Сало, между прочим,
-              тоже суперфуд. Получается, что счастье неизбежно. Давайте посмотрим ему в лицо.</p>
+        <div class="grid-section">
+
+          <a class="articles-grid grid-item" href="#">
+            <picture>
+              <source srcset="assets/img/articles/article-5.jpg" type="image/jpeg" media="(min-width: 320px)">
+              <source srcset="assets/img/articles/article-5@2x.jpg" type="image/jpeg" media="(min-width: 768px)">
+              <source srcset="assets/img/articles/article-5@3x.jpg" type="image/jpeg" media="(min-width: 1024px)">
+              <img class="grid-item__img" src="assets/img/articles/article-5.jpg" alt="article-img">
+              <picture>
+                <p class="grid-item__heading">ЛИЧНОСТЬ / ЗДОРОВЬЕ</p>
+                <h3 class="grid-item__title">Что такое суперфуды: польза, вред, мифы</h3>
+                <p class="grid-item__description">Гречку, капусту, зелень едите? Каши, зеленые супы? Сало, между прочим,
+                  тоже суперфуд. Получается, что счастье неизбежно. Давайте посмотрим ему в лицо.
+                </p>
           </a>
-          <a class="articles-item" href="javascript:void(0)">
-            <img src="assets/img/articles/article-6.jpg" alt="articles-img" class="articles-item__img">
-            <p class="articles-item__heading">СТИЛЬ / КРАСОТА</p>
-            <h3 class="articles-item__title">Волосы дыбом: кожа головы испытывает стресс</h3>
-            <p class="articles-item__description">Вместе с брендом Klorane разбираемся, как можно со всем этим
-              справиться.
-              Антистрессовая бьюти-терапия прилагается.</p>
+
+          <a class="articles-grid grid-item" href="#">
+            <picture>
+              <source srcset="assets/img/articles/article-6.jpg" type="image/jpeg" media="(min-width: 320px)">
+              <source srcset="assets/img/articles/article-6@2x.jpg" type="image/jpeg" media="(min-width: 768px)">
+              <source srcset="assets/img/articles/article-6@3x.jpg" type="image/jpeg" media="(min-width: 1024px)">
+              <img class="grid-item__img" src="assets/img/articles/article-6.jpg" alt="article-img">
+              <picture>
+                <p class="grid-item__heading">ЛИЧНОСТЬ / ЗДОРОВЬЕ</p>
+                <h3 class="grid-item__title">Что такое суперфуды: польза, вред, мифы</h3>
+                <p class="grid-item__description">Гречку, капусту, зелень едите? Каши, зеленые супы? Сало, между прочим,
+                  тоже суперфуд. Получается, что счастье неизбежно. Давайте посмотрим ему в лицо.
+                </p>
           </a>
+
         </div>
+
+        <div class="grid-section">
+
+          <a class="articles-grid grid-item" href="#">
+            <picture>
+              <source srcset="assets/img/articles/article-1.jpg" type="image/jpeg" media="(min-width: 320px)">
+              <source srcset="assets/img/articles/article-1@2x.jpg" type="image/jpeg" media="(min-width: 768px)">
+              <source srcset="assets/img/articles/article-1@3x.jpg" type="image/jpeg" media="(min-width: 1024px)">
+              <img class="grid-item__img" src="assets/img/articles/article-1.jpg" alt="article-img">
+              <picture>
+                <p class="grid-item__heading">ЛИЧНОСТЬ / ЗДОРОВЬЕ</p>
+                <h3 class="grid-item__title">Что такое суперфуды: польза, вред, мифы</h3>
+                <p class="grid-item__description">Гречку, капусту, зелень едите? Каши, зеленые супы? Сало, между прочим,
+                  тоже суперфуд. Получается, что счастье неизбежно. Давайте посмотрим ему в лицо.
+                </p>
+          </a>
+
+          <a class="articles-grid grid-item" href="#">
+            <picture>
+              <source srcset="assets/img/articles/article-2.jpg" type="image/jpeg" media="(min-width: 320px)">
+              <source srcset="assets/img/articles/article-2@2x.jpg" type="image/jpeg" media="(min-width: 768px)">
+              <source srcset="assets/img/articles/article-2@3x.jpg" type="image/jpeg" media="(min-width: 1024px)">
+              <img class="grid-item__img" src="assets/img/articles/article-2.jpg" alt="article-img">
+              <picture>
+                <p class="grid-item__heading">ЛИЧНОСТЬ / ЗДОРОВЬЕ</p>
+                <h3 class="grid-item__title">Что такое суперфуды: польза, вред, мифы</h3>
+                <p class="grid-item__description">Гречку, капусту, зелень едите? Каши, зеленые супы? Сало, между прочим,
+                  тоже суперфуд. Получается, что счастье неизбежно. Давайте посмотрим ему в лицо.
+                </p>
+          </a>
+
+        </div>
+
+        <div class="grid-section">
+
+          <a class="articles-grid grid-item" href="#">
+            <picture>
+              <source srcset="assets/img/articles/article-3.jpg" type="image/jpeg" media="(min-width: 320px)">
+              <source srcset="assets/img/articles/article-3@2x.jpg" type="image/jpeg" media="(min-width: 768px)">
+              <source srcset="assets/img/articles/article-3@3x.jpg" type="image/jpeg" media="(min-width: 1024px)">
+              <img class="grid-item__img grid-item__img--min" src="assets/img/articles/article-3.jpg" alt="article-img">
+              <picture>
+                <p class="grid-item__heading">СТИЛЬ / КРАСОТА</p>
+                <h3 class="grid-item__title">Волосы дыбом: кожа головы испытывает стресс</h3>
+                <p class="grid-item__description">Вместе с брендом Klorane разбираемся, как можно со всем этим
+                  справиться.Антистрессовая бьюти-терапия прилагается.
+                </p>
+          </a>
+
+          <a class="articles-grid grid-item" href="#">
+            <picture>
+              <source srcset="assets/img/articles/article-4.jpg" type="image/jpeg" media="(min-width: 320px)">
+              <source srcset="assets/img/articles/article-4@2x.jpg" type="image/jpeg" media="(min-width: 768px)">
+              <source srcset="assets/img/articles/article-4@3x.jpg" type="image/jpeg" media="(min-width: 1024px)">
+              <img class="grid-item__img" src="assets/img/articles/article-4.jpg" alt="article-img">
+              <picture>
+                <p class="grid-item__heading">СТИЛЬ / КРАСОТА</p>
+                <h3 class="grid-item__title">Волосы дыбом: кожа головы испытывает стресс</h3>
+                <p class="grid-item__description">Вместе с брендом Klorane разбираемся, как можно со всем этим
+                  справиться.Антистрессовая бьюти-терапия прилагается.
+                </p>
+          </a>
+
+        </div>
+
+        <div class="grid-section">
+
+          <a class="articles-grid grid-item" href="#">
+            <picture>
+              <source srcset="assets/img/articles/article-5.jpg" type="image/jpeg" media="(min-width: 320px)">
+              <source srcset="assets/img/articles/article-5@2x.jpg" type="image/jpeg" media="(min-width: 768px)">
+              <source srcset="assets/img/articles/article-5@3x.jpg" type="image/jpeg" media="(min-width: 1024px)">
+              <img class="grid-item__img" src="assets/img/articles/article-5.jpg" alt="article-img">
+              <picture>
+                <p class="grid-item__heading">ЛИЧНОСТЬ / ЗДОРОВЬЕ</p>
+                <h3 class="grid-item__title">Что такое суперфуды: польза, вред, мифы</h3>
+                <p class="grid-item__description">Гречку, капусту, зелень едите? Каши, зеленые супы? Сало, между прочим,
+                  тоже суперфуд. Получается, что счастье неизбежно. Давайте посмотрим ему в лицо.
+                </p>
+          </a>
+
+          <a class="articles-grid grid-item" href="#">
+            <picture>
+              <source srcset="assets/img/articles/article-6.jpg" type="image/jpeg" media="(min-width: 320px)">
+              <source srcset="assets/img/articles/article-6@2x.jpg" type="image/jpeg" media="(min-width: 768px)">
+              <source srcset="assets/img/articles/article-6@3x.jpg" type="image/jpeg" media="(min-width: 1024px)">
+              <img class="grid-item__img" src="assets/img/articles/article-6.jpg" alt="article-img">
+              <picture>
+                <p class="grid-item__heading">ЛИЧНОСТЬ / ЗДОРОВЬЕ</p>
+                <h3 class="grid-item__title">Что такое суперфуды: польза, вред, мифы</h3>
+                <p class="grid-item__description">Гречку, капусту, зелень едите? Каши, зеленые супы? Сало, между прочим,
+                  тоже суперфуд. Получается, что счастье неизбежно. Давайте посмотрим ему в лицо.
+                </p>
+          </a>
+
+        </div>
+
+        <div class="grid-section">
+
+          <a class="articles-grid grid-item" href="#">
+            <picture>
+              <source srcset="assets/img/articles/article-1.jpg" type="image/jpeg" media="(min-width: 320px)">
+              <source srcset="assets/img/articles/article-1@2x.jpg" type="image/jpeg" media="(min-width: 768px)">
+              <source srcset="assets/img/articles/article-1@3x.jpg" type="image/jpeg" media="(min-width: 1024px)">
+              <img class="grid-item__img" src="assets/img/articles/article-1.jpg" alt="article-img">
+              <picture>
+                <p class="grid-item__heading">ЛИЧНОСТЬ / ЗДОРОВЬЕ</p>
+                <h3 class="grid-item__title">Что такое суперфуды: польза, вред, мифы</h3>
+                <p class="grid-item__description">Гречку, капусту, зелень едите? Каши, зеленые супы? Сало, между прочим,
+                  тоже суперфуд. Получается, что счастье неизбежно. Давайте посмотрим ему в лицо.
+                </p>
+          </a>
+
+          <a class="articles-grid grid-item" href="#">
+            <picture>
+              <source srcset="assets/img/articles/article-2.jpg" type="image/jpeg" media="(min-width: 320px)">
+              <source srcset="assets/img/articles/article-2@2x.jpg" type="image/jpeg" media="(min-width: 768px)">
+              <source srcset="assets/img/articles/article-2@3x.jpg" type="image/jpeg" media="(min-width: 1024px)">
+              <img class="grid-item__img" src="assets/img/articles/article-2.jpg" alt="article-img">
+              <picture>
+                <p class="grid-item__heading">ЛИЧНОСТЬ / ЗДОРОВЬЕ</p>
+                <h3 class="grid-item__title">Что такое суперфуды: польза, вред, мифы</h3>
+                <p class="grid-item__description">Гречку, капусту, зелень едите? Каши, зеленые супы? Сало, между прочим,
+                  тоже суперфуд. Получается, что счастье неизбежно. Давайте посмотрим ему в лицо.
+                </p>
+          </a>
+
+        </div>
+
+        <div class="grid-section">
+
+          <a class="articles-grid grid-item" href="#">
+            <picture>
+              <source srcset="assets/img/articles/article-3.jpg" type="image/jpeg" media="(min-width: 320px)">
+              <source srcset="assets/img/articles/article-3@2x.jpg" type="image/jpeg" media="(min-width: 768px)">
+              <source srcset="assets/img/articles/article-3@3x.jpg" type="image/jpeg" media="(min-width: 1024px)">
+              <img class="grid-item__img grid-item__img--min" src="assets/img/articles/article-3.jpg" alt="article-img">
+              <picture>
+                <p class="grid-item__heading">СТИЛЬ / КРАСОТА</p>
+                <h3 class="grid-item__title">Волосы дыбом: кожа головы испытывает стресс</h3>
+                <p class="grid-item__description">Вместе с брендом Klorane разбираемся, как можно со всем этим
+                  справиться.Антистрессовая бьюти-терапия прилагается.
+                </p>
+          </a>
+
+          <a class="articles-grid grid-item" href="#">
+            <picture>
+              <source srcset="assets/img/articles/article-4.jpg" type="image/jpeg" media="(min-width: 320px)">
+              <source srcset="assets/img/articles/article-4@2x.jpg" type="image/jpeg" media="(min-width: 768px)">
+              <source srcset="assets/img/articles/article-4@3x.jpg" type="image/jpeg" media="(min-width: 1024px)">
+              <img class="grid-item__img" src="assets/img/articles/article-4.jpg" alt="article-img">
+              <picture>
+                <p class="grid-item__heading">СТИЛЬ / КРАСОТА</p>
+                <h3 class="grid-item__title">Волосы дыбом: кожа головы испытывает стресс</h3>
+                <p class="grid-item__description">Вместе с брендом Klorane разбираемся, как можно со всем этим
+                  справиться.Антистрессовая бьюти-терапия прилагается.
+                </p>
+          </a>
+
+        </div>
+
+        <div class="grid-section">
+
+          <a class="articles-grid grid-item" href="#">
+            <picture>
+              <source srcset="assets/img/articles/article-5.jpg" type="image/jpeg" media="(min-width: 320px)">
+              <source srcset="assets/img/articles/article-5@2x.jpg" type="image/jpeg" media="(min-width: 768px)">
+              <source srcset="assets/img/articles/article-5@3x.jpg" type="image/jpeg" media="(min-width: 1024px)">
+              <img class="grid-item__img" src="assets/img/articles/article-5.jpg" alt="article-img">
+              <picture>
+                <p class="grid-item__heading">ЛИЧНОСТЬ / ЗДОРОВЬЕ</p>
+                <h3 class="grid-item__title">Что такое суперфуды: польза, вред, мифы</h3>
+                <p class="grid-item__description">Гречку, капусту, зелень едите? Каши, зеленые супы? Сало, между прочим,
+                  тоже суперфуд. Получается, что счастье неизбежно. Давайте посмотрим ему в лицо.
+                </p>
+          </a>
+
+          <a class="articles-grid grid-item" href="#">
+            <picture>
+              <source srcset="assets/img/articles/article-6.jpg" type="image/jpeg" media="(min-width: 320px)">
+              <source srcset="assets/img/articles/article-6@2x.jpg" type="image/jpeg" media="(min-width: 768px)">
+              <source srcset="assets/img/articles/article-6@3x.jpg" type="image/jpeg" media="(min-width: 1024px)">
+              <img class="grid-item__img" src="assets/img/articles/article-6.jpg" alt="article-img">
+              <picture>
+                <p class="grid-item__heading">ЛИЧНОСТЬ / ЗДОРОВЬЕ</p>
+                <h3 class="grid-item__title">Что такое суперфуды: польза, вред, мифы</h3>
+                <p class="grid-item__description">Гречку, капусту, зелень едите? Каши, зеленые супы? Сало, между прочим,
+                  тоже суперфуд. Получается, что счастье неизбежно. Давайте посмотрим ему в лицо.
+                </p>
+          </a>
+
+        </div>
+
       </div>
-      <button class="btn btn-more">ЗАГРУЗИТЬ ЕЩЁ</button>
+
+      <button class="btn btn-more" id="loadMore">ЗАГРУЗИТЬ ЕЩЁ</button>
+
     </div>
   </section>
 
@@ -255,7 +494,7 @@
       <h2 class="title">ВОПРОС ЭКСПЕРТУ</h2>
       <div class="questions-items">
         <div class="questions-wrap">
-          <a class="questions-item" href="javascript:void(0)">
+          <a class="questions-item" href="#">
             <p class="questions-item__text">Где искать эко-френдли косметические бренды?</p>
             <div class="questions-item__header">
               <img src="assets/img/experts/author-1.jpg" alt="kataev" class="questions-item__photo">
@@ -270,7 +509,7 @@
           </a>
         </div>
         <div class="questions-wrap questions-wrap--bg">
-          <a class="questions-item" href="javascript:void(0)">
+          <a class="questions-item" href="#">
             <p class="questions-item__text">Как научиться медитировать?</p>
             <div class="questions-item__header">
               <img src="assets/img/experts/author-2.jpg" alt="vodyanova" class="questions-item__photo">
@@ -285,7 +524,7 @@
           </a>
         </div>
         <div class="questions-wrap">
-          <a class="questions-item" href="javascript:void(0)">
+          <a class="questions-item" href="#">
             <p class="questions-item__text">Вредит ли кератиновое выпрямление волосам?</p>
             <div class="questions-item__header">
               <img src="assets/img/experts/author-3.jpg" alt="arseneva" class="questions-item__photo">
@@ -311,14 +550,14 @@
       <div class="popular-items">
 
         <div class="popular-column">
-          <a href="javascript:void(0)" class="popular-item">
+          <a href="#" class="popular-item">
             <img src="assets/img/popular/image-1.jpg" alt="img" class="popular-item__img">
             <p class="popular-item__heading">ЛИЧНОСТЬ / ЗДОРОВЬЕ</p>
             <h3 class="popular-item__title">Что такое суперфуды: польза, вред, мифы</h3>
             <p class="popular-item__description">Гречку, капусту, зелень едите? Каши, зеленые супы? Сало, между прочим,
               тоже суперфуд. Получается, что счастье неизбежно. Давайте посмотрим ему в лицо.</p>
           </a>
-          <a href="javascript:void(0)" class="popular-item">
+          <a href="#" class="popular-item">
             <img src="assets/img/popular/image-5.jpg" alt="img" class="popular-item__img">
             <p class="popular-item__heading">СТИЛЬ / КРАСОТА</p>
             <h3 class="popular-item__title">Волосы дыбом: кожа головы испытывает стресс</h3>
@@ -328,7 +567,7 @@
         </div>
 
         <div class="popular-column">
-          <a href="javascript:void(0)" class="popular-item">
+          <a href="#" class="popular-item">
             <img src="assets/img/popular/image-6.jpg" alt="img" class="popular-item__img">
             <p class="popular-item__heading">ЛИЧНОСТЬ / ЗДОРОВЬЕ</p>
             <h3 class="popular-item__title">Что такое суперфуды: польза, вред, мифы</h3>
@@ -336,7 +575,7 @@
               тоже суперфуд. Получается, что счастье неизбежно. Давайте посмотрим ему в лицо.</p>
           </a>
 
-          <a href="javascript:void(0)" class="popular-item">
+          <a href="#" class="popular-item">
             <img src="assets/img/popular/image-4.jpg" alt="img" class="popular-item__img">
             <p class="popular-item__heading">СТИЛЬ / КРАСОТА</p>
             <h3 class="popular-item__title">Волосы дыбом: кожа головы испытывает стресс</h3>
@@ -347,14 +586,14 @@
         </div>
 
         <div class="popular-column">
-          <a href="javascript:void(0)" class="popular-item">
+          <a href="#" class="popular-item">
             <img src="assets/img/popular/image-3.jpg" alt="img" class="popular-item__img">
             <p class="popular-item__heading">ЛИЧНОСТЬ / ЗДОРОВЬЕ</p>
             <h3 class="popular-item__title">Волосы дыбом: кожа головы испытывает стресс</h3>
             <p class="popular-item__description">Вместе с брендом Klorane разбираемся, как можно со всем этим
               справиться.Антистрессовая бьюти-терапия прилагается.</p>
           </a>
-          <a href="javascript:void(0)" class="popular-item">
+          <a href="#" class="popular-item">
             <img src="assets/img/popular/image-2.jpg" alt="img" class="popular-item__img">
             <p class="popular-item__heading">СТИЛЬ / КРАСОТА</p>
             <h3 class="popular-item__title">Что такое суперфуды: польза, вред, мифы</h3>
@@ -380,13 +619,13 @@
 
         <div class="footer-head">
           <div class="footer-socials">
-            <a href="javascript:void(0)" class="footer-socials__link">
+            <a href="#" class="footer-socials__link">
               <span class="icon-instagram"></span>
             </a>
-            <a href="javascript:void(0)" class="footer-socials__link">
+            <a href="#" class="footer-socials__link">
               <span class="icon-facebook"></span>
             </a>
-            <a href="javascript:void(0)" class="footer-socials__link">
+            <a href="#" class="footer-socials__link">
               <span class="icon-twitter"></span>
             </a>
           </div>
@@ -402,15 +641,15 @@
             <h5 class="footer-menu__title">МЕНЮ</h5>
             <div class="footer-menu__inner">
               <ul class="footer-menu__list">
-                <li class="footer-menu__link"><a href="javascript:void(0)">Стиль</a></li>
-                <li class="footer-menu__link"><a href="javascript:void(0)">Личность</a></li>
-                <li class="footer-menu__link"><a href="javascript:void(0)">Развитие</a></li>
-                <li class="footer-menu__link"><a href="javascript:void(0)">Познание</a></li>
+                <li class="footer-menu__link"><a href="#">Стиль</a></li>
+                <li class="footer-menu__link"><a href="#">Личность</a></li>
+                <li class="footer-menu__link"><a href="#">Развитие</a></li>
+                <li class="footer-menu__link"><a href="#">Познание</a></li>
               </ul>
               <ul class="footer-menu__list">
-                <li class="footer-menu__link"><a href="javascript:void(0)">Общество</a></li>
-                <li class="footer-menu__link"><a href="javascript:void(0)">Колонки экспертов</a></li>
-                <li class="footer-menu__link"><a href="javascript:void(0)">Вопрос эксперту</a></li>
+                <li class="footer-menu__link"><a href="#">Общество</a></li>
+                <li class="footer-menu__link"><a href="#">Колонки экспертов</a></li>
+                <li class="footer-menu__link"><a href="#">Вопрос эксперту</a></li>
               </ul>
             </div>
           </nav>
@@ -418,13 +657,13 @@
             <h5 class="footer-menu__title">MANIFEST MAGAZINE</h5>
             <div class="footer-menu__inner">
               <ul class="footer-menu__list">
-                <li class="footer-menu__link"><a href="javascript:void(0)">О проекте</a></li>
-                <li class="footer-menu__link"><a href="javascript:void(0)">Команда</a></li>
-                <li class="footer-menu__link"><a href="javascript:void(0)">Контакты</a></li>
+                <li class="footer-menu__link"><a href="#">О проекте</a></li>
+                <li class="footer-menu__link"><a href="#">Команда</a></li>
+                <li class="footer-menu__link"><a href="#">Контакты</a></li>
               </ul>
               <ul class="footer-menu__list">
-                <li class="footer-menu__link"><a href="javascript:void(0)">Премия Арт Манифест</a></li>
-                <li class="footer-menu__link"><a href="javascript:void(0)">По вопросам рекламы</a></li>
+                <li class="footer-menu__link"><a href="#">Премия Арт Манифест</a></li>
+                <li class="footer-menu__link"><a href="#">По вопросам рекламы</a></li>
                 <li class="footer-menu__link footer-menu__link--cursive">Стать автором/<br> Предложить идею</a></li>
               </ul>
             </div>
@@ -432,9 +671,9 @@
         </div>
       </div>
       <div class="footer-wrap">
-        <a href="javascript:void(0)" class="footer-privacy">Политика конфиденциальности</a>
+        <a href="#" class="footer-privacy">Политика конфиденциальности</a>
         <div class="footer-developer">Разработка сайта
-          <a href="javascript:void(0)" class="footer-developer__link">
+          <a href="#" class="footer-developer__link">
             <img src="assets/icons/footer/media-bay.svg" alt="media-bay">
           </a>
         </div>

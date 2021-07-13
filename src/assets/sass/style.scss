@@ -10,7 +10,7 @@
 @import "media/promo_media";
 @import "blocks/title";
 @import "media/title_media";
-@import "blocks/articles";
+//@import "blocks/articles";
 @import "media/articles_media";
 @import "blocks/experts";
 @import "media/experts_media";
@@ -37,6 +37,21 @@
     text-decoration: none;
   }
 
+}
+
+*,*:before,*:after {
+  box-sizing: border-box; 
+}
+
+.hiddenStyle {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 }
 
 .container {

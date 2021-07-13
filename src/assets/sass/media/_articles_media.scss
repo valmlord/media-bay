@@ -1,118 +1,181 @@
-@media (min-width: 767.98px) {
-    .articles {
-        &-items {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: no-wrap;
-            justify-content: space-between;
-            position: relative;
+// @media (min-width: 767.98px) {
+//     .articles {
+//         &-items {
+//             width: 100%;
+//             // display: flex;
+//             flex-direction: column;
+//             flex-wrap: wrap;
+//             column-count: 2;    
+//             column-gap: 0;
+//             position: relative;
 
-            &:before {
-                content: url('../icons/articles/Star.svg');
-                position: absolute;
-                right: 109px;
-                top: -66px;
-                z-index: 4;
-            }
+//             &:before {
+//                 content: url('../icons/articles/Star.svg');
+//                 position: absolute;
+//                 right: 109px;
+//                 top: -66px;
+//                 z-index: 4;
+//             }
 
-            &:after {
-                content: url('../icons/experts/ellipse.svg');
-                position: absolute;
-                right: 150px;
-                top: -96px;
-                z-index: 4;
-            }
+//             &:after {
+//                 content: url('../icons/experts/ellipse.svg');
+//                 position: absolute;
+//                 right: 150px;
+//                 top: -96px;
+//                 z-index: 4;
+//             }
+//         }
 
-        }
+//         &-wrap {
+//             margin: 0rem;
+//             padding: .5rem;
+//             line-height: 1.5rem;
+//             color: #fff;
+//             break-inside: avoid;
+//         }
 
-        &-column {
-            min-width: 350px;
-            max-width: 48%;
-        }
+//         &-item {
+//             z-index: 5;
 
+//             &__img {
+//                 width: 350px;
+//                 object-fit: contain;
+//             }
+            
 
-        &-item {
-            z-index: 5;
+//             &__title {
+//                 font-size: 22px;
+//                 line-height: 26px;
+//             }
 
-            &__title {
-                font-size: 22px;
-                line-height: 26px;
-            }
+//             &__description {
+//                 font-size: 15px;
+//                 line-height: 19px;
+//             }
+//         }
+//     }
+// }
 
-            &__description {
-                font-size: 15px;
-                line-height: 19px;
-            }
-        }
-    }
-}
+// @media (min-width: 1023.98px) {
+//     .articles {
+//         &-items {
+//             &:before {
+//                 content: url('../icons/articles/Star.svg');
+//                 position: absolute;
+//                 right: 288px;
+//                 top: -73px;
+//             }
 
-@media (min-width: 1023.98px) {
-    .articles {
-        &-items {
-            &:before {
-                content: url('../icons/articles/Star.svg');
-                position: absolute;
-                right: 288px;
-                top: -73px;
-            }
+//             &:after {
+//                 content: url('../icons/experts/ellipse.svg');
+//                 position: absolute;
+//                 right: 150px;
+//                 top: -72px;
+//             }
+//         }
 
-            &:after {
-                content: url('../icons/experts/ellipse.svg');
-                position: absolute;
-                right: 150px;
-                top: -72px;
-            }
-        }
+//         &-item {
+//             &__wrap {
+//                 width: 32%;
+//                 break-inside: avoid;
+//             }
 
-        &-column {
-            min-width: 290px;
-            max-width: 30%;
+//             &__heading {
+//                 font-size: 14px;
+//             }
 
-            &:nth-child(3) {
-                display: flex;
-                flex-direction: column;
-            }
-        }
+//             &__title {
+//                 font-size: 24px;
+//                 line-height: 29px;
+//             }
 
-        &-item {
-            &__heading {
-                font-size: 14px;
-            }
-
-            &__title {
-                font-size: 24px;
-                line-height: 29px;
-            }
-
-            &__description {
-                font-size: 16px;
-                line-height: 21px;
-            }
-        }
-    }
-}
+//             &__description {
+//                 font-size: 16px;
+//                 line-height: 21px;
+//             }
+//         }
+//     }
+// }
 
 @media (min-width: 1279.98px) {
     .articles {
-        &-column {
-            min-width: 300px;
-            max-width: 32%;
-        }
-
-        &-items {
+        .container {
             &:before {
                 content: url('../icons/articles/Star.svg');
                 position: absolute;
-                right: 368px;
-                top: -61px;
+                right: 388px;
+                top: 60px;
             }
 
             &:after {
                 content: url('../icons/experts/ellipse.svg');
                 position: absolute;
-                right: 168px;
-                top: -72px;
+                right: 200px;
+                top: 55px;
+            }
+        }
+        &-grid{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .grid {
+            flex-direction: row;
+
+            &-section {
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+            }
+            &-item {
+                display: flex;
+                flex-direction: column;
+                z-index: 5;
+                width: 374px;
+                &--left {
+                    padding-right: 20px;
+                }
+                &--center {
+                    padding: 0 20px;
+                }
+                &--right {
+                    padding-left: 20px;
+                }
+                
+                &__img {
+                    display: block;
+                    object-fit: cover;
+                    width: 100%;
+                    &--min {
+                        height: 221px;
+                    }
+                }
+        
+                &__heading {
+                    font-family: "QuincyCF", sans-serif;
+                    padding: 15px 0;
+                    font-size: 12px;
+                    line-height: 15.6px;
+                    color: $dark-blue;
+                }
+        
+                &__title {
+                    font-family: "QuincyCF", sans-serif;
+                    color: $black;
+                    font-size: 18px;
+                    line-height: 21.6px;
+                    font-weight: 700;
+                }
+        
+                &__description {
+                    font-family: 'Raleway', sans-serif;
+                    color: $black;
+                    font-size: 14px;
+                    margin-top: 13px;
+                    font-weight: 400;
+                    line-height: 18.2px;
+                    padding-bottom: 40px;
+                }
             }
         }
     }
