@@ -25,7 +25,6 @@ menuItem.forEach((item) => {
 
 // LOAD MORE
 
-
 let work = document.querySelector("#gridLoad");
 let items = Array.from(work.querySelectorAll(".grid-section"));
 let loadMore = document.getElementById("loadMore");
