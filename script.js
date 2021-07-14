@@ -16393,28 +16393,29 @@ menuItem.forEach(function (item) {
   });
 }); // LOAD MORE
 
-var work = document.querySelector("#workOuterShell");
+var work = document.querySelector("#gridLoad");
 var items = Array.from(work.querySelectorAll(".grid-section"));
 var loadMore = document.getElementById("loadMore");
-var maxItems = 3;
-var loadItems = 3;
+var maxItems = 2;
+var loadItems = 2;
 var hiddenClass = "hiddenStyle";
 var hiddenItems = Array.from(document.querySelectorAll(".hiddenStyle"));
 
-function myFunction(x) {
+function quantityItems(x) {
   if (x.matches) {
     // If media query matches
     maxItems = 3;
     loadItems = 3;
   } else {
     maxItems = 2;
+    loadItems = 2;
   }
 }
 
 var x = window.matchMedia("(min-width: 1023.98px)");
-myFunction(x); // Call listener function at run time
+quantityItems(x); // Call listener function at run time
 
-x.addListener(myFunction); // Attach listener function on state changes
+x.addListener(quantityItems); // Attach listener function on state changes
 
 items.forEach(function (item, index) {
   console.log(item.innerText, index);
