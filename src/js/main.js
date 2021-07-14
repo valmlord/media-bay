@@ -37,11 +37,11 @@ let hiddenItems = Array.from(document.querySelectorAll(".hiddenStyle"));
 
  function myFunction(x) {
    if (x.matches) {
-//     // If media query matches
+     // If media query matches
      maxItems = 3;
      loadItems = 3;
    } else {
-     maxItems = 4;
+     maxItems = 2;
    }
  }
 

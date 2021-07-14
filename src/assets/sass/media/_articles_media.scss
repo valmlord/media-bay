@@ -116,11 +116,12 @@
         }
         &-grid{
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
         }
 
         .grid {
-            flex-direction: row;
+            flex-direction: row;            
+            flex-wrap: wrap;
 
             &-section {
                 display: flex;
@@ -131,6 +132,7 @@
                 display: flex;
                 flex-direction: column;
                 z-index: 5;
+                width: 373px;
                 
                 &__img {
                     display: block;
@@ -179,3 +181,14 @@
         }
     }
 }
+
+.hiddenStyle {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+  }
