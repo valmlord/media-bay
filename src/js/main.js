@@ -26,29 +26,29 @@ menuItem.forEach((item) => {
 // LOAD MORE
 
 
-let work = document.querySelector("#workOuterShell");
+let work = document.querySelector("#gridLoad");
 let items = Array.from(work.querySelectorAll(".grid-section"));
 let loadMore = document.getElementById("loadMore");
 
-let maxItems = 3;
-let loadItems = 3;
+let maxItems = 2;
+let loadItems = 2;
 let hiddenClass = "hiddenStyle";
 let hiddenItems = Array.from(document.querySelectorAll(".hiddenStyle"));
 
- function myFunction(x) {
-   if (x.matches) {
-     // If media query matches
-     maxItems = 3;
-     loadItems = 3;
-   } else {
-     maxItems = 2;
-   }
- }
+function quantityItems(x) {
+  if (x.matches) {
+    // If media query matches
+    maxItems = 3;
+    loadItems = 3;
+  } else {
+    maxItems = 2;
+    loadItems = 2;
+  }
+}
 
- let x = window.matchMedia("(min-width: 1023.98px)");
- myFunction(x); // Call listener function at run time
- x.addListener(myFunction); // Attach listener function on state changes
-
+let x = window.matchMedia("(min-width: 1023.98px)");
+quantityItems(x); // Call listener function at run time
+x.addListener(quantityItems); // Attach listener function on state changes
 
 items.forEach(function (item, index) {
   console.log(item.innerText, index);

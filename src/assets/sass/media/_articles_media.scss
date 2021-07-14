@@ -41,7 +41,7 @@
 //                 width: 350px;
 //                 object-fit: contain;
 //             }
-            
+
 
 //             &__title {
 //                 font-size: 22px;
@@ -74,30 +74,88 @@
 //             }
 //         }
 
-//         &-item {
-//             &__wrap {
-//                 width: 32%;
-//                 break-inside: avoid;
-//             }
-
-//             &__heading {
-//                 font-size: 14px;
-//             }
-
-//             &__title {
-//                 font-size: 24px;
-//                 line-height: 29px;
-//             }
-
-//             &__description {
-//                 font-size: 16px;
-//                 line-height: 21px;
-//             }
+//         &-item  {  
 //         }
 //     }
 // }
 
-@media (min-width: 1279.98px) {
+@media(min-width: 767.98px) {
+    .articles {
+        .container {
+            &:before {
+                content: url('../icons/articles/Star.svg');
+                position: absolute;
+                right: 118px;
+                top: 12px;
+            }
+
+            &:after {
+                content: url('../icons/experts/ellipse.svg');
+                position: absolute;
+                right: 159px;
+                top: -25px;
+            }
+        }
+
+        .grid {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            &-section {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                flex-basis: 49%;
+            }
+
+            &-item {
+                display: flex;
+                flex-direction: column;
+                z-index: 5;
+                width: 100%;
+
+                &__img {
+                    object-fit: cover;
+
+                    &--min {
+                        height: 205px;
+                    }
+
+                    &--max {
+                        height: 329px;
+                    }
+                }
+
+                &__heading {
+                    padding: 15px 0;
+                    font-size: 12px;
+                    line-height: 15.6px;
+                }
+
+                &__title {
+                    font-family: "QuincyCF", sans-serif;
+                    color: $black;
+                    font-size: 18px;
+                    line-height: 21.6px;
+                    font-weight: 700;
+                }
+
+                &__description {
+                    font-family: 'Raleway', sans-serif;
+                    color: $black;
+                    font-size: 14px;
+                    margin-top: 13px;
+                    font-weight: 400;
+                    line-height: 18.2px;
+                    padding-bottom: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1023.98px) {
     .articles {
         .container {
             &:before {
@@ -114,81 +172,80 @@
                 top: 55px;
             }
         }
-        &-grid{
+
+        &-grid {
             display: flex;
             flex-direction: column;
         }
 
         .grid {
-            flex-direction: row;            
-            flex-wrap: wrap;
-
             &-section {
                 display: flex;
                 flex-direction: column;
-                flex: 1;
+                flex-wrap: wrap;
+                flex-basis: 32%;
             }
+
             &-item {
-                display: flex;
-                flex-direction: column;
-                z-index: 5;
-                width: 373px;
-                
-                &__img {
-                    display: block;
-                    object-fit: cover;
-                    width: 100%;
-                    &--min {
-                        height: 221px;
-                    }
-                }
-        
                 &__heading {
                     font-family: "QuincyCF", sans-serif;
-                    padding: 15px 0;
-                    font-size: 12px;
-                    line-height: 15.6px;
                     color: $dark-blue;
-                }
-        
-                &__title {
-                    font-family: "QuincyCF", sans-serif;
-                    color: $black;
-                    font-size: 18px;
-                    line-height: 21.6px;
-                    font-weight: 700;
-                }
-        
-                &__description {
-                    font-family: 'Raleway', sans-serif;
-                    color: $black;
                     font-size: 14px;
-                    margin-top: 13px;
-                    font-weight: 400;
-                    line-height: 18.2px;
-                    padding-bottom: 40px;
+                }
+
+                &__title {
+                    font-size: 24px;
+                    line-height: 29px;
+                }
+
+                &__description {
+                    font-size: 16px;
+                    line-height: 21px;
                 }
             }
         }
-        .right {
-            margin-left: 20px;
-        }
-        .center {
-            margin: 0 20px;
-        }
-        .left {
-            margin-right: 20px;
+    }
+
+    @media (min-width: 1279.98px) {
+        .articles {
+            .container {
+                &:before {
+                    content: url('../icons/articles/Star.svg');
+                    position: absolute;
+                    right: 388px;
+                    top: 60px;
+                }
+
+                &:after {
+                    content: url('../icons/experts/ellipse.svg');
+                    position: absolute;
+                    right: 200px;
+                    top: 55px;
+                }
+            }
+
+
+            .grid {
+
+                &-item {
+                    display: flex;
+                    flex-direction: column;
+                    z-index: 5;
+
+                    &__img {
+                        display: block;
+                        object-fit: cover;
+                        width: 100%;
+
+                        &--min {
+                            height: 221px;
+                        }
+                        &--max {
+                            height: 410px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
-
-.hiddenStyle {
-    position: absolute;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    width: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-  }
