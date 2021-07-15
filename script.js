@@ -16367,11 +16367,16 @@ module.exports = g;
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/web.dom-collections.for-each.js */ "./node_modules/core-js/modules/web.dom-collections.for-each.js");
 /* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/slider */ "./src/js/modules/slider.js");
-/* harmony import */ var _modules_loadMore__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/loadMore */ "./src/js/modules/loadMore.js");
+/* harmony import */ var core_js_modules_es_array_from_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es.array.from.js */ "./node_modules/core-js/modules/es.array.from.js");
+/* harmony import */ var core_js_modules_es_array_from_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_from_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es.string.iterator.js */ "./node_modules/core-js/modules/es.string.iterator.js");
+/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/slider */ "./src/js/modules/slider.js");
 
 
- // OUTGOING MENU
+
+ //import "./modules/loadMore";
+// OUTGOING MENU
 
 var menu = document.querySelector(".outgoing"),
     menuItem = document.querySelectorAll(".outgoing-menu__link, .outgoing-menu__last-link"),
@@ -16387,63 +16392,50 @@ menuItem.forEach(function (item) {
   item.addEventListener("click", function () {
     menu.classList.remove("outgoing--active");
   });
-});
+}); // LOAD MORE
 
-/***/ }),
+var work = document.querySelector("#gridLoad");
+var items = Array.from(work.querySelectorAll(".grid-section"));
+var loadMore = document.getElementById("loadMore");
+var maxItems = 2;
+var loadItems = 2;
+var hiddenClass = "hiddenStyle";
+var hiddenItems = Array.from(document.querySelectorAll(".hiddenStyle"));
 
-/***/ "./src/js/modules/loadMore.js":
-/*!************************************!*\
-  !*** ./src/js/modules/loadMore.js ***!
-  \************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var core_js_modules_es_array_from_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.from.js */ "./node_modules/core-js/modules/es.array.from.js");
-/* harmony import */ var core_js_modules_es_array_from_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_from_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es.string.iterator.js */ "./node_modules/core-js/modules/es.string.iterator.js");
-/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/web.dom-collections.for-each.js */ "./node_modules/core-js/modules/web.dom-collections.for-each.js");
-/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_2__);
-
-
-
-
-var loadMore = function loadMore() {
-  function loadMoreUpload(loadMoreBtn, loadMoreGrid, loadMoreSection, itemsCount, uploadCount) {
-    var hiddenClass = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : true;
-    var grid = document.getElementById(loadMoreGrid),
-        items = Array.from(grid.querySelectorAll(loadMoreSection)),
-        trigger = document.getElementById(loadMoreBtn),
-        maxItems = itemsCount,
-        loadItems = uploadCount,
-        hidden = hiddenClass,
-        hiddenItems = Array.from(document.querySelectorAll(hiddenClass));
-    items.forEach(function (item, index) {
-      console.log(item.innerText, index);
-
-      if (index > maxItems - 1) {
-        item.classList.add(hidden);
-      }
-    });
-    trigger.addEventListener("click", function () {
-      [].forEach.call(document.querySelectorAll(hidden), function (item, index) {
-        if (index < loadItems) {
-          item.classList.remove(hidden);
-        }
-
-        if (document.querySelectorAll(hidden).length === 0) {
-          trigger.style.display = "none";
-        }
-      });
-    });
+function quantityItems(x) {
+  if (x.matches) {
+    // If media query matches
+    maxItems = 3;
+    loadItems = 3;
+  } else {
+    maxItems = 2;
+    loadItems = 2;
   }
+}
 
-  loadMore('"loadMore"', '"gridLoad"', '.grid-section', 2, 2, '.hiddenStyle');
-};
+var x = window.matchMedia("(min-width: 1023.98px)");
+quantityItems(x); // Call listener function at run time
 
-/* harmony default export */ __webpack_exports__["default"] = (loadMore);
+x.addListener(quantityItems); // Attach listener function on state changes
+
+items.forEach(function (item, index) {
+  console.log(item.innerText, index);
+
+  if (index > maxItems - 1) {
+    item.classList.add(hiddenClass);
+  }
+});
+loadMore.addEventListener("click", function () {
+  [].forEach.call(document.querySelectorAll("." + hiddenClass), function (item, index) {
+    if (index < loadItems) {
+      item.classList.remove(hiddenClass);
+    }
+
+    if (document.querySelectorAll("." + hiddenClass).length === 0) {
+      loadMore.style.display = "none";
+    }
+  });
+});
 
 /***/ }),
 
