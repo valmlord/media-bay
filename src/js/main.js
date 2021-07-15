@@ -1,4 +1,5 @@
 import "./modules/slider";
+//import "./modules/loadMore";
 
 // OUTGOING MENU
 
